@@ -1,0 +1,14 @@
+const express = require('express')
+const router = express.Router()
+
+const authData = {
+	"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Il9kZWZhdWx0IiwidHlwIjoiSldUIn0.eyJhdWQiOiIyOTcyNzhjM2I3MWE0OTljOWY5ZmRhN2FmMWY2ZjEyYiIsImV4cCI6MTY1NjUwNjgxNiwiaWF0IjoxNjU1OTAyMDE2LCJpc3MiOiJodHRwczovL2lkcC5ncmFiLmNvbSIsImp0aSI6IkVsZ1Z5Nm5vU1M2NVlOUzV0RXR0TWciLCJuYmYiOjE2NTU5MDE4MzYsInBpZCI6IjIwMTUyMzdjLTM2MDQtNGE3MC1hNzk5LTAxYjA2NTA2ZDdlNCIsInBzdCI6MSwic2NwIjoiW1wiZmExZWIyNDg5MjMwNDNjODlhNmQ5MTcwZGNlMzljNjFcIl0iLCJzdWIiOiJUV09fTEVHR0VEX09BVVRIIiwic3ZjIjoiIiwidGtfdHlwZSI6ImFjY2VzcyJ9.OYOqbx7SbWoQz4Qrd5XYYJVf4MsmHWDsDZFYFslrjtRmqD5If-Hpo2JQVwtnsZxdFnyjxNgbZ7Nfn18rF26zAy1sQTq5MUMYELUW7X_EU9kN65ZtsqYQOqR_canEVMts7UuA7DJGBmoeM3v5N-bbhGbF06c4qI9D3CMt9pYgePvtXMRR8yEMHLJj-na8EZRzOZukjbWls2iAzj6OFqnXvviL4leHjDHR97cxv58KqAHum3TrYn4dq_YV5deTEM47TKIKhCRtctA-bQiBrH5EhtgFuLHQGCOKfOf0St0UGI8WYIYmYzkKs1XCpGn-VTWojnqbGVhsfLhphQIi47hPXw",
+	"token_type": "Bearer",
+	"expires_in": 604799
+}
+
+router.post(('/'), (req, res) => {
+    res.send(authData)
+})
+
+module.exports = router

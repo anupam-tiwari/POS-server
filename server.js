@@ -1,6 +1,7 @@
 const express = require("express")
 const bodyParser = require('body-parser');
 const posRouter = require('./routes/pos'); 
+const authRouter = require('./routes/auth');
 //const cors
 
 
@@ -10,6 +11,8 @@ app.use(bodyParser.json())
 //app.use(cors())
 
 app.use('/pos', posRouter)
+app.use('/auth', authRouter)
+
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
