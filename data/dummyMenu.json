@@ -1,6 +1,6 @@
 {
-    "merchantID": "",
-    "partnerMerchantID": "",
+    "merchantID": "GFSBPOS-326-053",
+    "partnerMerchantID": "1",
     "currency": {
       "code": "SGD",
       "symbol": "S$",
