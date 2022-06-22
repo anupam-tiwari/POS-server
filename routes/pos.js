@@ -6,7 +6,7 @@ router.get('/', (req,res) => {
     res.send("welcome to pos router")
 })
 
-router.post('/sendmenu', (req,res) => {
+router.get('/sendmenu', (req,res) => {
     res.send(data)
 })
 
