@@ -10,5 +10,12 @@ router.get('/sendmenu', (req,res) => {
     res.send(data)
 })
 
+router.post('/submitorder', (req, res) =>{
+    console.log(req)
+    res.send(200)
+})
+
+
+
 
 module.exports = router
