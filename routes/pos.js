@@ -11,7 +11,7 @@ router.get('/sendmenu', (req,res) => {
 })
 
 router.post('/submitorder', (req, res) =>{
-    console.log(req)
+    console.log(req.body)
     res.send(200)
 })
 
